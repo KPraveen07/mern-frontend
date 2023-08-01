@@ -6,7 +6,7 @@ function Items () {
   const [items, setItems] = useState([])
 
    useEffect(()=> {
-        axios.get('https://mern-api-one.vercel.app',{mode : 'cors'})
+        axios.get('https://mern-api-one.vercel.app')
         .then(result => setItems(result.data))
         .catch(err => console.log(err))
    }, [])
