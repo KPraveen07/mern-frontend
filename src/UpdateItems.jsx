@@ -14,7 +14,7 @@ function UpdateItems () {
   const navigate = useNavigate()
 
   useEffect(()=> {
-    axios.get('https://mern-api-one.vercel.app/getItem/'+id)
+    axios.get('https://mern-api-one.vercel.app//getItem/'+id)
     .then(result => {console.log(result)
       setSn(result.data.sn)
       setName(result.data.name)

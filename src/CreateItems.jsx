@@ -14,7 +14,7 @@ function CreateItems () {
 
   const Submit = (e) => {
   e.preventDefault();
-  axios.post("https://mern-api-one.vercel.app/CreateItems", {sn, name, image, category, label, price, description})
+  axios.post("https://mern-api-one.vercel.app//CreateItems", {sn, name, image, category, label, price, description})
   .then(result => {
     console.log(result)
     navigate('/')
