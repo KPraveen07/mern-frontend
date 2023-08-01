@@ -6,13 +6,13 @@ function Items () {
   const [items, setItems] = useState([])
 
    useEffect(()=> {
-        axios.get('https://mern-api-one.vercel.app/')
+        axios.get('https://mern-api-one.vercel.app')
         .then(result => setItems(result.data))
         .catch(err => console.log(err))
    }, [])
 
    const delitem =  (id) => {
-    axios.delete('https://mern-api-one.vercel.app//deleteItem/'+id)
+    axios.delete('https://mern-api-one.vercel.app/deleteItem/'+id)
     .then(res => {console.log(res)
         window.location.reload()
     })
