@@ -52,8 +52,8 @@ function Items () {
                                     <td>{item.description}</td>
                                     <td>
                                     <Link to={`/update/${item._id}`} className='btn btn-success'>Edit</Link>
-                                    <button className='btn btn-danger'
-                                    onClick={(e) => delitem(item._id)}>Delete</button>
+                                    {/* <button className='btn btn-danger'
+                                    onClick={(e) => delitem(item._id)}>Delete</button> */}
                                     </td>
                                 </tr>
                             })
