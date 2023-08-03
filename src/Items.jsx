@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function Items () {
   const [items, setItems] = useState([])
@@ -25,6 +27,15 @@ function Items () {
             <div align="center">
             <h2>MENU</h2>
             </div>
+            <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
             <Link to="/create" className='btn btn-success'>Add +</Link>
             <table className='table table-striped'>
                     <thead>
